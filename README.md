@@ -103,7 +103,9 @@ This project implements a complete text-to-video generation pipeline, including 
 - **Format**: Natural language description of camera movements
 
 ## Usage
-
+```bash
+cd description2video
+```
 ### Method 1: Use Complete Pipeline (Recommended)
 ```bash
 python pipeline.py
