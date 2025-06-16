@@ -135,9 +135,9 @@ python viewcrafterinput-video.py
 
 ## Environment Requirements
 
-- Python 3.8+
+- Python 3.9
 - CUDA-supported GPU (recommended)
-- Sufficient VRAM (8GB+ recommended)
+- Sufficient VRAM (40GB+ recommended)
 
 ## Install Dependencies
 
