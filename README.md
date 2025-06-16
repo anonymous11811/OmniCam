@@ -1,11 +1,12 @@
 # OmniCam  
+OmniCam is an image motion video generation system that automatically converts user input images and natural language descriptions (such as "camera moves left and then rotates up") into videos.The specific workflow is as follows: Firstly, the LLaMA big language model is used to parse the text description into structured camera motion parameters (including time, speed, direction, etc.), then these parameters are converted into specific camera trajectory coordinates, and finally, the ViewCrafter model is used to generate the final video based on input images and trajectory data. The entire system provides a complete processing pipeline and web interface, allowing users to generate video content with specific camera motion effects through simple text descriptions.
 ## Configuration Instructions  
-1. **Run ViewCrafter first**  
+1. **Try to run ViewCrafter first**  
 2. **Download weights**  
    ```bash  
    wget https://drive.google.com/drive/folders/1FUqwUt95QCL0mblZOQeXEJdGAmXRPXX5?usp=sharing  
    ```  
-3. **Expected directory structure (with sub-branch in llamacheckpoint)**  
+3. **Expected directory structure**  
    ```markdown  
    ├── Viewcrafter  
    ├── weight  
@@ -141,6 +142,7 @@ python viewcrafterinput-video.py
 ## Install Dependencies
 
 ```bash
+cd description2video
 pip install -r requirements.txt
 ```
 
